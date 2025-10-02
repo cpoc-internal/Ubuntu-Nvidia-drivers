@@ -9,11 +9,6 @@ set -o nounset
 disable_apparmor=true
 disable_firewall=true
 
-
-# Start the Private AI Quick Pre-Setup
-echo "Starting the Private AI Quick Pre-Setup..."
-
-
 # Disable AppArmor
 if [ "$disable_apparmor" = "true" ]; then
     echo "Disabling AppArmor..."
