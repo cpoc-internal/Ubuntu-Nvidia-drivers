@@ -1,4 +1,4 @@
-# Ubuntu-Nvidia-drivers
+# Ubuntu-NVIDIA-drivers
 CUDA drivers installation, this repository will help to install CUDA Drivers, CUDA Toolkit and NVIDIA fabric manager, this applies to Nvidia H100, H200 GPUS
 
 1.Clone the repository in your Ubuntu server
