@@ -6,22 +6,9 @@
 # Setup the Script Variables
 echo "Setting up the Script Variables..."
 set -o nounset
-disable_apparmor=true
 disable_firewall=true
-# enable_rootless_docker=true
-# enable_system_startup_for_rootless_docker=true
 
-
-# Start the Private AI Quick Pre-Setup
 echo "Starting the drivers install.."
-
-
-# Disable AppArmor
-if [ "$disable_apparmor" = "true" ]; then
-    echo "Disabling AppArmor..."
-    sudo systemctl stop apparmor
-    sudo systemctl disable apparmor
-fi
 
 # Disable Firewall
 if [ "$disable_firewall" = "true" ]; then
@@ -48,6 +35,7 @@ else
     echo "Installing the NVIDIA Driver..."
     sudo apt-get install -y cuda-drivers-575
 fi
+#show nvidia gpu information
 nvidia-smi
 
 sudo apt install nvidia-fabricmanager-575
@@ -61,3 +49,4 @@ sudo systemctl start nvidia-fabricmanager.service
 nvidia-smi topo -m
 echo "Drivers and libs are installed"
 systemctl status nvidia-fabricmanager.service
+
