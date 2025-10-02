@@ -2,13 +2,18 @@
 #Nvidia-drivers
 #eargueda@cisco.com
 
-
 # Setup the Script Variables
 echo "Setting up the Script Variables..."
 set -o nounset
+disable_apparmor=true
 disable_firewall=true
 
-echo "Starting the drivers install.."
+# Disable AppArmor
+if [ "$disable_apparmor" = "true" ]; then
+    echo "Disabling AppArmor..."
+    sudo systemctl stop apparmor
+    sudo systemctl disable apparmor
+fi
 
 # Disable Firewall
 if [ "$disable_firewall" = "true" ]; then
@@ -16,6 +21,8 @@ if [ "$disable_firewall" = "true" ]; then
     sudo systemctl stop ufw
     sudo systemctl disable ufw
 fi
+
+echo "Starting NVIDIA Drivers installation"
 
 # Install the NVIDIA CUDA Toolkit
 echo "Installing the NVIDIA CUDA Toolkit..."
