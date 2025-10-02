@@ -2,7 +2,6 @@
 #Nvidia-drivers
 #eargueda@cisco.com
 
-
 # Setup the Script Variables
 echo "Setting up the Script Variables..."
 set -o nounset
