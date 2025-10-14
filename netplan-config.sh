@@ -84,5 +84,8 @@ echo "Netplan configuration created and validated successfully."
 echo "File location: $NETPLAN_FILE"
 echo "Content:"
 sudo cat "$NETPLAN_FILE"
-ifconfig
 echo "----------------------------------------"
+echo " waiting few seconds..."
+sleep 5
+ifconfig
+echo "Done."
