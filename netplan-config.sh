@@ -71,7 +71,7 @@ network:
                 - 192.168.200.1
                 search: []
 
-EOF
+EOF >>
 
 sudo chmod 600 "$NETPLAN_FILE"
 
