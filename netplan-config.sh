@@ -1,10 +1,9 @@
 #!/bin/bash
 
 # ----------------- Configuration Variables -----------------
-NETPLAN_FILE="/etc/netplan/50-config.yaml
+NETPLAN_FILE="/etc/netplan/50-config.yaml"
 
 sudo tee "$NETPLAN_FILE" > /dev/null << EOF
-
 network:
     version: 2
     ethernets:
@@ -71,7 +70,7 @@ network:
                 - 192.168.200.1
                 search: []
 
-EOF >>
+EOF
 
 sudo chmod 600 "$NETPLAN_FILE"
 
