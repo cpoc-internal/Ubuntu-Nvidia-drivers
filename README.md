@@ -25,4 +25,9 @@ chmod +x install-nvidia-drivers-2204.sh
  chmod +x provision-nics.sh
  ./provision-nics.sh
 ```
+6. Create new netplan config
+```
+ chmod +x netplan-config.sh
+ ./netplan-config.sh
+```
 
