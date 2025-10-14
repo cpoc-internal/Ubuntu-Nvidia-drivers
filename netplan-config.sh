@@ -75,8 +75,8 @@ EOF
 sudo chmod 600 "$NETPLAN_FILE"
 
 echo "Validating and applying Netplan configuration..."
-sudo netplan try || { echo "Netplan configuration failed validation. Check $NETPLAN_FILE for syntax errors."; exit 1; }
-If 'netplan try' succeeds, it reverts after 120s if no confirmation.
+#sudo netplan try || { echo "Netplan configuration failed validation. Check $NETPLAN_FILE for syntax errors."; exit 1; }
+#If 'netplan try' succeeds, it reverts after 120s if no confirmation.
 sudo netplan apply
 
 echo "----------------------------------------"
