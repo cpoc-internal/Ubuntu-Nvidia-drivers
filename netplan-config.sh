@@ -1,4 +1,5 @@
 #!/bin/bash
+#eargueda
 
 # ----------------- Configuration Variables -----------------
 NETPLAN_FILE="/etc/netplan/50-config.yaml"
