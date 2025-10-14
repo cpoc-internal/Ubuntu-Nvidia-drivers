@@ -1,6 +1,8 @@
 #!/bin/bash
 #eargueda
 
+#To apply this configuration on another server, please double-check the ETHERNET interface name and update the IP address as you need!
+
 # ----------------- Configuration Variables -----------------
 NETPLAN_FILE="/etc/netplan/50-config.yaml"
 

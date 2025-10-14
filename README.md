@@ -20,12 +20,12 @@ chmod +x install-nvidia-drivers-2204.sh
  ./install-nvidia-drivers-2404.sh
 ```
 
-5. provision Nic ip address H100
+5. provision Nic ip address UCS C885 H100 NON persistent
 ```
  chmod +x provision-nics.sh
  ./provision-nics.sh
 ```
-6. Create new netplan config for H100 server persistent config
+6. Create new netplan config for UCS C885 H100 server persistent config, But it could be use on H200 or AMD
 ```
  chmod +x netplan-config.sh
  ./netplan-config.sh
