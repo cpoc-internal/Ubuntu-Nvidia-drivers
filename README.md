@@ -25,7 +25,7 @@ chmod +x install-nvidia-drivers-2204.sh
  chmod +x provision-nics.sh
  ./provision-nics.sh
 ```
-6. Create new netplan config for H100 server persistant config
+6. Create new netplan config for H100 server persistent config
 ```
  chmod +x netplan-config.sh
  ./netplan-config.sh
