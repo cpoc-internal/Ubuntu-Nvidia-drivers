@@ -20,3 +20,9 @@ chmod +x install-nvidia-drivers-2204.sh
  ./install-nvidia-drivers-2404.sh
 ```
 
+5. provision Nic ip address H100
+```
+ chmod +x provision-nics.sh
+ ./provision-nics.sh
+```
+
