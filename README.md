@@ -25,9 +25,22 @@ chmod +x install-nvidia-drivers-2204.sh
  chmod +x provision-nics.sh
  ./provision-nics.sh
 ```
-6. Create new netplan config for UCS C885 H100 server persistent config, But it could be use on H200 or AMD, please double check the ethernet interface name and the ip address!
+
+6. Create new netplan config for UCS C885 H100 server persistent config 
 ```
- chmod +x netplan-config.sh
- ./netplan-config.sh
+ chmod +x netplan-config-H100.sh
+ ./netplan-config-H100.sh
+```
+6. Create new netplan config for UCS C885 H200 server persistent config 
+
+Server 1
+```
+ chmod +x netplan-config-H200-1.sh
+ ./netplan-config-H200-1.sh
 ```
 
+Server 2
+```
+ chmod +x netplan-config-H200-2.sh
+ ./netplan-config-H200-2.sh
+```
