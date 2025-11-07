@@ -39,16 +39,16 @@ chmod +x install-nvidia-drivers-2204.sh
  chmod +x netplan-config-H100.sh
  ./netplan-config-H100.sh
 ```
-7. Create new netplan config for UCS C885 H200 server persistent config 
+7. Create new netplan config for UCS C885 H200 or AMD server persistent config 
 
 Server 1
 ```
- chmod +x netplan-config-H200-1.sh
- ./netplan-config-H200-1.sh
+ chmod +x netplan-config-1.sh
+ ./netplan-config-1.sh
 ```
 
 Server 2
 ```
- chmod +x netplan-config-H200-2.sh
- ./netplan-config-H200-2.sh
+ chmod +x netplan-config-2.sh
+ ./netplan-config-2.sh
 ```
