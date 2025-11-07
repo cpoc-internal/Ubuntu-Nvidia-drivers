@@ -10,14 +10,14 @@ sudo tee "$NETPLAN_FILE" > /dev/null << EOF
 network:
     version: 2
     ethernets:
-        ens201f0np0:
+        ens201np0:
             addresses:
             - 192.168.200.21/18
             nameservers:
                 addresses:
                 - 192.168.200.1
 
-        ens202f0np0:
+        ens202np0:
             addresses:
             - 192.168.200.22/24
             nameservers:
@@ -25,7 +25,7 @@ network:
                 - 192.168.200.1
                 search: []
 
-        ens203f0np0:
+        ens203np0:
             addresses:
             - 192.168.200.23/24
             nameservers:
@@ -33,7 +33,7 @@ network:
                 - 192.168.200.1
                 search: []
 
-        ens204f0np0:
+        ens204np0:
             addresses:
             - 192.168.200.24/24
             nameservers:
@@ -41,7 +41,7 @@ network:
                 - 192.168.200.1
                 search: []
 
-        ens205f0np0:
+        ens205np0:
             addresses:
             - 192.168.200.25/24
             nameservers:
@@ -49,7 +49,7 @@ network:
                 - 192.168.200.1
                 search: []
         
-        ens206f0np0:
+        ens206np0:
             addresses:
             - 192.168.200.26/24
             nameservers:
@@ -57,7 +57,7 @@ network:
                 - 192.168.200.1
                 search: []
 
-        ens207f0np0:
+        ens207np0:
             addresses:
             - 192.168.200.27/24
             nameservers:
@@ -65,7 +65,7 @@ network:
                 - 192.168.200.1
                 search: []
 
-        ens208f0np0:
+        ens208np0:
             addresses:
             - 192.168.200.28/24
             nameservers:
@@ -91,4 +91,5 @@ echo "----------------------------------------"
 echo " waiting few seconds..."
 sleep 5
 ifconfig
+
 echo "Done."
