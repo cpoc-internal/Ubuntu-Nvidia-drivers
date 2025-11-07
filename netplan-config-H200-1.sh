@@ -90,5 +90,7 @@ sudo cat "$NETPLAN_FILE"
 echo "----------------------------------------"
 echo " waiting few seconds..."
 sleep 5
+sudo apt install net-tools
+sleep 5
 ifconfig
 echo "Done."
