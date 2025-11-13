@@ -12,7 +12,7 @@ network:
     ethernets:
         ens201np0:
             addresses:
-            - 192.168.200.2/24
+            - 192.168.200.11/24
             nameservers:
                 addresses:
                 - 192.168.200.1
@@ -22,7 +22,7 @@ network:
 
         ens202np0:
             addresses:
-            - 192.168.200.3/24
+            - 192.168.200.12/24
             nameservers:
                 addresses:
                 - 192.168.200.1
@@ -32,7 +32,7 @@ network:
 
         ens203np0:
             addresses:
-            - 192.168.200.4/24
+            - 192.168.200.13/24
             nameservers:
                 addresses:
                 - 192.168.200.1
@@ -42,7 +42,7 @@ network:
 
         ens204np0:
             addresses:
-            - 192.168.200.5/24
+            - 192.168.200.14/24
             nameservers:
                 addresses:
                 - 192.168.200.1
@@ -52,7 +52,7 @@ network:
 
         ens205np0:
             addresses:
-            - 192.168.200.6/24
+            - 192.168.200.15/24
             nameservers:
                 addresses:
                 - 192.168.200.1
@@ -62,7 +62,7 @@ network:
         
         ens206np0:
             addresses:
-            - 192.168.200.7/24
+            - 192.168.200.16/24
             nameservers:
                 addresses:
                 - 192.168.200.1
@@ -72,7 +72,7 @@ network:
 
         ens207np0:
             addresses:
-            - 192.168.200.8/24
+            - 192.168.200.17/24
             nameservers:
                 addresses:
                 - 192.168.200.1
@@ -82,7 +82,7 @@ network:
 
         ens208np0:
             addresses:
-            - 192.168.200.9/24
+            - 192.168.200.18/24
             nameservers:
                 addresses:
                 - 192.168.200.1
