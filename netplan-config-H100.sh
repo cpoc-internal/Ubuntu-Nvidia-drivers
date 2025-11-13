@@ -12,17 +12,17 @@ network:
     ethernets:
         ens201f0np0:
             addresses:
-            - 192.168.200.2/18
+            - 192.168.200.2/24
             nameservers:
                 addresses:
-                - 192.168.200.1
+                - 
 
         ens202f0np0:
             addresses:
             - 192.168.200.3/24
             nameservers:
                 addresses:
-                - 192.168.200.1
+                - 
                 search: []
 
         ens203f0np0:
@@ -30,7 +30,7 @@ network:
             - 192.168.200.4/24
             nameservers:
                 addresses:
-                - 192.168.200.1
+                - 
                 search: []
 
         ens204f0np0:
@@ -38,7 +38,7 @@ network:
             - 192.168.200.5/24
             nameservers:
                 addresses:
-                - 192.168.200.1
+                - 
                 search: []
 
         ens205f0np0:
@@ -46,7 +46,7 @@ network:
             - 192.168.200.6/24
             nameservers:
                 addresses:
-                - 192.168.200.1
+                - 
                 search: []
         
         ens206f0np0:
@@ -54,7 +54,7 @@ network:
             - 192.168.200.7/24
             nameservers:
                 addresses:
-                - 192.168.200.1
+                - 
                 search: []
 
         ens207f0np0:
@@ -62,7 +62,7 @@ network:
             - 192.168.200.8/24
             nameservers:
                 addresses:
-                - 192.168.200.1
+                - 
                 search: []
 
         ens208f0np0:
@@ -70,7 +70,7 @@ network:
             - 192.168.200.9/24
             nameservers:
                 addresses:
-                - 192.168.200.1
+                - 
                 search: []
 
 EOF
