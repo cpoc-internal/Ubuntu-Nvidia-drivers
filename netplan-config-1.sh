@@ -15,63 +15,80 @@ network:
             - 192.168.200.11/18
             nameservers:
                 addresses:
-                - 192.168.200.1
+                - 
+            routes:
+                - to: default
+                  via: 192.168.200.1
 
         ens202np0:
             addresses:
             - 192.168.200.12/24
             nameservers:
                 addresses:
-                - 192.168.200.1
-                search: []
+                - 
+             routes:
+                - to: default
+                  via: 192.168.200.1
 
         ens203np0:
             addresses:
             - 192.168.200.13/24
             nameservers:
                 addresses:
-                - 192.168.200.1
-                search: []
+                -
+             routes:
+                - to: default
+                  via: 192.168.200.1
 
         ens204np0:
             addresses:
             - 192.168.200.14/24
             nameservers:
                 addresses:
-                - 192.168.200.1
-                search: []
+                - 
+             routes:
+                - to: default
+                  via: 192.168.200.1
 
         ens205np0:
             addresses:
             - 192.168.200.15/24
             nameservers:
                 addresses:
-                - 192.168.200.1
-                search: []
+                -
+             routes:
+                - to: default
+                  via: 192.168.200.1
         
         ens206np0:
             addresses:
             - 192.168.200.16/24
             nameservers:
                 addresses:
-                - 192.168.200.1
-                search: []
+                - 
+             routes:
+                - to: default
+                  via: 192.168.200.1
 
         ens207np0:
             addresses:
             - 192.168.200.17/24
             nameservers:
                 addresses:
-                - 192.168.200.1
-                search: []
+                - 
+             routes:
+                - to: default
+                  via: 192.168.200.1
 
         ens208np0:
             addresses:
             - 192.168.200.18/24
             nameservers:
                 addresses:
-                - 192.168.200.1
-                search: []
+                - 
+             routes:
+                - to: default
+                  via: 192.168.200.1
 
 EOF
 
