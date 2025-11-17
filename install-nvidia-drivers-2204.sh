@@ -33,8 +33,6 @@ sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt-get update
 
 echo "Installing the NVIDIA toolkit..."
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-13-0_13.0.0-1_amd64.deb
-sudo dpkg -i cuda-13-0_13.0.0-1_amd64.deb
 sudo apt-get install -y cuda-toolkit-12-9
 
 echo "Installing the NVIDIA Driver..."
