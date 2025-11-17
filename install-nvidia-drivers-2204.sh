@@ -33,16 +33,16 @@ sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt-get update
 
 echo "Installing the NVIDIA toolkit..."
-sudo apt-get install -y cuda-toolkit-13
+sudo apt-get install -y cuda-toolkit-13.0.0-1
 
 echo "Installing the NVIDIA Driver..."
-sudo apt-get install -y cuda-drivers-580 
+sudo apt-get install -y cuda-drivers-580.95.05
 
 # Display the monitor and manage NVIDIA Graphics Processing Unit (GPU) devices on a system.
 nvidia-smi
 
 echo "Installing the NVIDIA fabricmanager..."
-sudo apt install -y nvidia-fabricmanager-580 
+sudo apt install -y nvidia-fabricmanager-580.95.05
 sudo systemctl enable nvidia-fabricmanager.service
 sudo systemctl start nvidia-fabricmanager.service
 #pip install --upgrade vllm
