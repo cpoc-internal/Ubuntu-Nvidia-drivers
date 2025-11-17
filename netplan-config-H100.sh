@@ -12,10 +12,13 @@ network:
     ethernets:
         ens201f0np0:
             addresses:
-            - 192.168.200.2/18
+            - 192.168.200.2/24
             nameservers:
                 addresses:
                 - 192.168.200.1
+            routes:
+                - to: 192.168.200.0/24
+                  via: 192.168.200.1
 
         ens202f0np0:
             addresses:
@@ -23,7 +26,10 @@ network:
             nameservers:
                 addresses:
                 - 192.168.200.1
-                search: []
+            routes:
+                - to: 192.168.200.0/24
+                  via: 192.168.200.1
+
 
         ens203f0np0:
             addresses:
@@ -31,7 +37,10 @@ network:
             nameservers:
                 addresses:
                 - 192.168.200.1
-                search: []
+            routes:
+                - to: 192.168.200.0/24
+                  via: 192.168.200.1
+
 
         ens204f0np0:
             addresses:
@@ -39,7 +48,9 @@ network:
             nameservers:
                 addresses:
                 - 192.168.200.1
-                search: []
+            routes:
+                - to: 192.168.200.0/24
+                  via: 192.168.200.1
 
         ens205f0np0:
             addresses:
@@ -47,15 +58,20 @@ network:
             nameservers:
                 addresses:
                 - 192.168.200.1
-                search: []
-        
+            routes:
+                - to: 192.168.200.0/24
+                  via: 192.168.200.1
+
         ens206f0np0:
             addresses:
             - 192.168.200.7/24
             nameservers:
                 addresses:
                 - 192.168.200.1
-                search: []
+            routes:
+                - to: 192.168.200.0/24
+                  via: 192.168.200.1
+
 
         ens207f0np0:
             addresses:
@@ -63,7 +79,10 @@ network:
             nameservers:
                 addresses:
                 - 192.168.200.1
-                search: []
+            routes:
+                - to: 192.168.200.0/24
+                  via: 192.168.200.1
+
 
         ens208f0np0:
             addresses:
@@ -71,7 +90,11 @@ network:
             nameservers:
                 addresses:
                 - 192.168.200.1
-                search: []
+            routes:
+                - to: 192.168.200.0/24
+                  via: 192.168.200.1
+
+              
 
 EOF
 
